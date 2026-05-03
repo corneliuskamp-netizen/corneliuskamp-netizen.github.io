@@ -57,29 +57,17 @@
       }
 
       .title-section h1 {
-        margin: 0 0 20px 0;
+        margin: 0 0 40px 0;
         font-size: 3.2rem;
         font-weight: 700;
-        background: linear-gradient(135deg, #FFF, #FFD966);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        color: white;
         text-shadow: 0 2px 5px rgba(0,0,0,0.2);
         letter-spacing: -0.5px;
       }
 
-      .subhead {
-        margin-bottom: 48px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border-bottom: 1px dashed rgba(255,255,255,0.3);
-        display: inline-block;
-        padding-bottom: 6px;
-      }
-
       .cards-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 32px;
         margin-bottom: 30px;
       }
@@ -90,16 +78,8 @@
         border-radius: 28px;
         padding: 22px 20px 24px;
         text-align: center;
-        transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow 0.25s;
         box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.5);
         border: 1px solid rgba(255,215,0,0.25);
-      }
-
-      .card:hover {
-        transform: translateY(-8px);
-        background: rgba(0, 35, 75, 0.9);
-        box-shadow: 0 25px 35px -12px black;
-        border-color: rgba(255, 200, 50, 0.6);
       }
 
       .card img {
@@ -109,12 +89,7 @@
         border-radius: 24px;
         margin-bottom: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        transition: transform 0.2s;
         background: #0f1a2f;
-      }
-
-      .card:hover img {
-        transform: scale(1.02);
       }
 
       .card h3 {
@@ -149,7 +124,13 @@
         color: #f0f2fa;
       }
 
-      @media (max-width: 780px) {
+      @media (max-width: 1024px) {
+        .cards-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 700px) {
         body {
           padding: 24px 16px;
         }
@@ -158,6 +139,9 @@
         }
         .card h3 {
           font-size: 1.45rem;
+        }
+        .cards-container {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -171,8 +155,7 @@
     </nav>
 
     <section class="title-section">
-      <h1>🏎️ Key Figures of Red Bull Racing</h1>
-      <div class="subhead">🏆 Champions · Engineers · Strategists · Future Stars</div>
+      <h1>Key Figures of Red Bull Racing</h1>
 
       <div class="cards-container">
         <div class="card">
