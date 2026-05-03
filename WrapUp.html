@@ -32,11 +32,16 @@
         flex-wrap: wrap;
       }
       .logo-image {
-        width: min(48vw, 560px);
-        max-width: 560px;
+        width: min(40vw, 420px);
+        max-width: 420px;
         height: auto;
       }
-     (max-width: 800px) {
+      (max-width: 900px) {
+        .logo-image {
+          width: calc(50vw - 20px);
+        }
+      }
+      (max-width: 600px) {
         .logo-image {
           width: calc(100vw - 40px);
         }
