@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Why I started Supporting Redbull Racing</title>
     <style>
       body {
@@ -9,6 +11,26 @@
         background: #1D19AC;
         color: white;
         text-align: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 16px 0;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+      }
+      .navbar a:hover {
+        background: rgba(255, 255, 255, 0.1);
       }
       .title-section {
         max-width: 1080px;
@@ -36,12 +58,12 @@
         max-width: 420px;
         height: auto;
       }
-      (max-width: 900px) {
+      @media (max-width: 900px) {
         .logo-image {
           width: calc(50vw - 20px);
         }
       }
-      (max-width: 600px) {
+      @media (max-width: 600px) {
         .logo-image {
           width: calc(100vw - 40px);
         }
@@ -49,6 +71,12 @@
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="WrapUp.html">WrapUp 1</a>
+      <a href="WrapUp2.html">WrapUp 2</a>
+      <a href="WrapUp3.html">WrapUp 3</a>
+      <a href="WrapUp4.html">WrapUp 4</a>
+    </nav>
     <section class="title-section">
       <h1>Why I started Supporting Redbull Racing</h1>
       <p>
