@@ -11,42 +11,52 @@
         text-align: center;
       }
       .title-section {
-        padding: 0;
+        max-width: 1080px;
+        margin: 0 auto;
       }
       .title-section h1 {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
       .title-section p {
-        margin: 10px auto 0;
-        max-width: 720px;
-        font-size: 1rem;
+        margin: 24px auto 0;
+        max-width: 860px;
+        font-size: 1.25rem;
+        line-height: 1.6;
       }
       .logo-row {
         display: flex;
         justify-content: center;
-        gap: 32px;
-        margin-top: 32px;
+        gap: 24px;
+        margin-top: 40px;
         flex-wrap: wrap;
       }
       .logo-image {
-        max-width: 260px;
+        width: min(48vw, 560px);
+        max-width: 560px;
         height: auto;
       }
+     (max-width: 800px) {
+        .logo-image {
+          width: calc(100vw - 40px);
+        }
+      }
     </style>
-  <div>
-</head>
+  </head>
   <body>
+    <section class="title-section">
       <h1>Why I started Supporting Redbull Racing</h1>
-      <p>I started supporting the Red Bull Racing Formula 1 team in 2022, primarily because of their lead driver, Max Verstappen. 
-        My support for Max stems from several reasons, the main one being that he is Dutch, which reflects one of my nationalities. 
-        Beyond that, he is an exceptionally talented and experienced driver with four World Drivers' Championships to his name. 
-        I also admire him for his personality, his ability to ignore outside criticism, and his perseverance in making the most of any situation he finds himself in. 
-        They are having a rough start this year, but I believe we can bounce back in 2026.  </p>
-        </div>
-      <div>
+      <p>
+        I started supporting the Red Bull Racing Formula 1 team in 2022, primarily because of their lead driver, Max Verstappen.
+        My support for Max stems from several reasons, the main one being that he is Dutch, which reflects one of my nationalities.
+        Beyond that, he is an exceptionally talented and experienced driver with four World Drivers' Championships to his name.
+        I also admire him for his personality, his ability to ignore outside criticism, and his perseverance in making the most of any situation he finds himself in.
+        They are having a rough start this year, but I believe we can bounce back in 2026.
+      </p>
+      <div class="logo-row">
         <img src="Redbulllogo.jpg" alt="Red Bull logo" class="logo-image" />
         <img src="Maxflag.jpg" alt="Max Verstappen" class="logo-image" />
       </div>
+    </section>
   </body>
 </html>
